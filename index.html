@@ -760,6 +760,37 @@
     }
     .wrap{color:#000!important}
   }
+  /* ---------- MOBILE: tablas anchas -> tarjetas apiladas (sin scroll horizontal) ---------- */
+  @media screen and (max-width:700px){
+    /* Comparacion de un vistazo */
+    .cmp-card{border:none;background:transparent;box-shadow:none;border-radius:0;overflow:visible}
+    .cmp-card .table-scroll{overflow:visible}
+    table.cmp{min-width:0;width:100%;font-size:.94rem}
+    .cmp thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+    .cmp tbody,.cmp tbody tr,.cmp tbody td,.cmp tbody th{display:block;width:auto}
+    .cmp tbody tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 16px 18px;margin:0 0 14px}
+    .cmp tbody tr.is-best{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 48%,var(--line))}
+    .cmp tbody tr.is-best>*:first-child{box-shadow:none}
+    .cmp tbody th,.cmp tbody td{border-bottom:none!important;padding:8px 0;text-align:left;vertical-align:top}
+    .cmp tbody th{padding:0 0 6px}
+    .cmp tbody td:last-child{border-top:1px solid var(--line);margin-top:8px;padding-top:14px}
+    .cmp tbody tr.is-best td:last-child{border-top-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+    .opt-cell{min-width:0}
+    .cmp-price .bar{min-width:0}
+    .cmp-cta{width:100%;justify-content:center;padding:13px 16px;font-size:.92rem}
+    .cmp-cta svg{width:14px;height:14px}
+    /* Enlaces oficiales */
+    .refs .table-scroll{overflow:visible}
+    table.refs-table{min-width:0;width:100%}
+    .refs-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+    .refs-table tbody,.refs-table tbody tr,.refs-table th,.refs-table td{display:block;width:auto}
+    .refs-table tbody tr{padding:14px 2px;border-bottom:1px solid var(--line)}
+    .refs-table tbody tr:last-child{border-bottom:none}
+    .refs-table th,.refs-table td{border-bottom:none!important;padding:4px 0;text-align:left}
+    .refs-table tbody th{font-size:1.05rem}
+    .refs-table .dates{margin-top:4px}
+    .ref-link{margin-top:4px;font-size:.95rem}
+  }
 </style>
 
 <div class="wrap">
