@@ -5,6 +5,10 @@
 > timelines, and direct booking links. Built as a product demo for the travel
 > industry (Amadeus / GDS-style workflow).
 
+**🌎 Localized for the Hispanic travel market** — the interface is in Spanish (`es-AR`),
+built for travel agencies in Argentina / LATAM. Porting it to English or a multi-locale
+version would be a straightforward next step.
+
 ![Vanilla JS](https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=black)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen)
 ![Responsive](https://img.shields.io/badge/responsive-mobile%20%E2%86%92%20desktop-blue)
