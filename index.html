@@ -760,26 +760,37 @@
     }
     .wrap{color:#000!important}
   }
-  /* ---------- MOBILE: tablas anchas -> tarjetas apiladas (sin scroll horizontal) ---------- */
+  /* ---------- MOBILE: comparativa compacta (tabla) + enlaces (fichas) ---------- */
   @media screen and (max-width:700px){
-    /* Comparacion de un vistazo */
-    .cmp-card{border:none;background:transparent;box-shadow:none;border-radius:0;overflow:visible}
+    /* Comparacion de un vistazo: tabla compacta, columnas esenciales, sin scroll */
     .cmp-card .table-scroll{overflow:visible}
-    table.cmp{min-width:0;width:100%;font-size:.94rem}
-    .cmp thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
-    .cmp tbody,.cmp tbody tr,.cmp tbody td,.cmp tbody th{display:block;width:auto}
-    .cmp tbody tr{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px 16px 18px;margin:0 0 14px}
-    .cmp tbody tr.is-best{background:var(--accent-soft);border-color:color-mix(in srgb,var(--accent) 48%,var(--line))}
-    .cmp tbody tr.is-best>*:first-child{box-shadow:none}
-    .cmp tbody th,.cmp tbody td{border-bottom:none!important;padding:8px 0;text-align:left;vertical-align:top}
-    .cmp tbody th{padding:0 0 6px}
-    .cmp tbody td:last-child{border-top:1px solid var(--line);margin-top:8px;padding-top:14px}
-    .cmp tbody tr.is-best td:last-child{border-top-color:color-mix(in srgb,var(--accent) 35%,transparent)}
-    .opt-cell{min-width:0}
-    .cmp-price .bar{min-width:0}
-    .cmp-cta{width:100%;justify-content:center;padding:13px 16px;font-size:.92rem}
-    .cmp-cta svg{width:14px;height:14px}
-    /* Enlaces oficiales */
+    table.cmp{min-width:0;width:100%;table-layout:fixed;font-size:.72rem}
+    .cmp thead th:nth-child(5),.cmp tbody td:nth-child(5),
+    .cmp thead th:nth-child(6),.cmp tbody td:nth-child(6){display:none}
+    .cmp thead th:nth-child(1){width:31%}
+    .cmp thead th:nth-child(2){width:30%}
+    .cmp thead th:nth-child(3){width:15%}
+    .cmp thead th:nth-child(4){width:24%}
+    .cmp thead th{font-size:.55rem;letter-spacing:.05em;padding:9px 5px}
+    .cmp tbody td,.cmp tbody th{padding:11px 5px;vertical-align:top}
+    .opt-cell{gap:5px;min-width:0}
+    .opt-head{flex-wrap:wrap}
+    .opt-op{display:none}
+    .opt-head{gap:6px}
+    .opt-name{font-size:.8rem;line-height:1.12}
+    .rankchip{width:21px;height:21px;font-size:.6rem;border-radius:6px}
+    .best-badge{width:auto;max-width:100%;white-space:normal;font-size:.5rem;padding:3px 7px;letter-spacing:.03em;line-height:1.18}
+    .best-badge svg{width:8px;height:8px}
+    .cmp-price .ars{font-size:.75rem;white-space:normal}
+    .cmp-price .ars .cur{font-size:.58rem}
+    .cmp-price .alt{font-size:.56rem;white-space:normal}
+    .cmp-price .bar{display:none}
+    .cmp-noches{font-size:.76rem}
+    .cmp-noches small{font-size:.5rem;letter-spacing:.05em}
+    .sems{gap:4px}
+    .sem{font-size:.56rem;padding:3px 6px;white-space:normal;line-height:1.2}
+    .cmp-note{font-size:.9rem}
+    /* Enlaces oficiales: fichas apiladas (son 3, quedan cortas) */
     .refs .table-scroll{overflow:visible}
     table.refs-table{min-width:0;width:100%}
     .refs-table thead{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
