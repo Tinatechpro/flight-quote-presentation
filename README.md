@@ -71,8 +71,6 @@ python -m http.server 8000    # then open http://localhost:8000
 |---|---|
 | `index.html` | The site — served live by GitHub Pages. |
 | `preview.png` | Light / dark preview image. |
-| `Propuesta-vuelos-Viena-CLARO.pdf` | PDF export — light theme. |
-| `Propuesta-vuelos-Viena-OSCURO.pdf` | PDF export — dark theme. |
 
 ---
 
